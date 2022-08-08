@@ -37,7 +37,9 @@ function onGalleryElClick(e) {
   window.addEventListener('keydown', onEscKeyPress);
 
   function onEscKeyPress(e) {
-      instance.close();
+    if (e.code === "Escape") {
+        instance.close();
+    }
   };
 };
 
